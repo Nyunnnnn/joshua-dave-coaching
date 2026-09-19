@@ -747,6 +747,30 @@
                                     </div>
                                 </div>
 
+                                <!-- Payment Method Snippet -->
+                                <div class="payment-section">
+                                  <h3 class="text-xl font-bold mb-4 text-white">Select Payment Method</h3>
+                                  <div class="space-y-3">
+                                    <!-- Credit/Debit Card Option -->
+                                    <label class="flex items-center p-4 bg-slate-800 border border-slate-700 rounded-lg cursor-pointer hover:border-indigo-500 transition-colors">
+                                      <input type="radio" name="payment_method" value="card" checked class="text-indigo-600 focus:ring-indigo-500 h-4 w-4">
+                                      <span class="ml-3 font-medium text-white">Credit / Debit Card</span>
+                                    </label>
+
+                                    <!-- PayPal Option -->
+                                    <label class="flex items-center p-4 bg-slate-800 border border-slate-700 rounded-lg cursor-pointer hover:border-indigo-500 transition-colors">
+                                      <input type="radio" name="payment_method" value="paypal" class="text-indigo-600 focus:ring-indigo-500 h-4 w-4">
+                                      <span class="ml-3 font-medium text-white">PayPal</span>
+                                    </label>
+
+                                    <!-- GCash / Crypto Option -->
+                                    <label class="flex items-center p-4 bg-slate-800 border border-slate-700 rounded-lg cursor-pointer hover:border-indigo-500 transition-colors">
+                                      <input type="radio" name="payment_method" value="gcash_crypto" class="text-indigo-600 focus:ring-indigo-500 h-4 w-4">
+                                      <span class="ml-3 font-medium text-white">GCash / Crypto</span>
+                                    </label>
+                                  </div>
+                                </div>
+                                
                                 <div class="flex justify-between pt-4">
                                     <button type="button" onclick="goToStep(3)" class="px-6 py-3 rounded-lg border border-gray-700 text-gray-300 font-bold text-sm uppercase tracking-wider hover:bg-gray-800">
                                         Back
@@ -1212,6 +1236,6 @@
             if (mmr < 5420) return "Divine";
             return "Immortal";
         }
-    </script>
+    </script>        
 </body>
 </html>
